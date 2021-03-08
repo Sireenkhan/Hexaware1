@@ -1,5 +1,4 @@
 package com.hexaware.MLP311.persistence;
-
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
@@ -23,6 +22,9 @@ public class EmployeeMapper implements ResultSetMapper<Employee> {
     /**
      * @return Employee
      */
-    return new Employee(rs.getInt("EMP_ID"));
+    return new Employee(rs.getInt("EMP_ID"), rs.getString("EMP_NAME"),
+    rs.getString("EMP_EMAIL"), rs.getString("EMP_MOB"),
+    rs.getDate("EMP_DATE_JOIN"),
+    rs.getString("EMP_DEPT"), rs.getInt("EMP_LEAVE_BALANCE"), rs.getInt("EMP_MGR_ID"));
   }
 }

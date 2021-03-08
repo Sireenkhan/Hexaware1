@@ -43,4 +43,35 @@ public class EmployeeFactory {
   public static Employee listById(final int empID) {
     return dao().find(empID);
   }
+  /**
+     * @param empID id to get Manager details.
+     * @return Employee
+     */
+  public static Employee findManagerDetails(final int empID) {
+    return dao().findManager(empID);
+  }
+    /**
+  * @param empId to get Employee name.
+  * @return Employee
+  */
+  public static Employee[] listReporting(final int empId) {
+    List<Employee> es = dao().listSome(empId);
+    return es.toArray(new Employee[es.size()]);
+  }
+
+  /**
+  * @param empid to get Employee name.
+  * @return Employee
+  */
+  public static Employee findEmployeeName(final int empid) {
+    return dao().findEmployee(empid);
+  }
+
+  /**
+   *@param noOfDays to update leave leave balance.
+   *@param empId to update leave balance for that employee.
+  */
+  public static void updateLeaveBalance(final int empId, final int noOfDays) {
+    dao().changeLeaveBalance(empId, noOfDays);
+  }
 }
