@@ -25,8 +25,7 @@ public class CliMain {
     System.out.println("4. Check Leave Status");
     System.out.println("5. View Manager Details");
     System.out.println("6. Action on Leave Application");
-    System.out.println("7. Apply for Sabbatical Leave");
-    System.out.println("8. Exit");
+    System.out.println("7. Exit");
     System.out.println("Enter your choice:");
     int menuOption = option.nextInt();
     mainMenuDetails(menuOption);
@@ -54,11 +53,7 @@ public class CliMain {
         actionOnLeaveApplication();
         break;
       case 7:
-        applyForSabbaticalLeave();
-        break;
-      case 8:
         System.exit(1);
-        break;
       default:
         System.out.println("Choose between 1 to 7");
     }
@@ -196,19 +191,6 @@ public class CliMain {
     }
   }
 
-  private void applyForSabbaticalLeave() {
-    System.out.println("Enter Scenario -: ");
-    System.out.println("enter 1 or 2 to choice scenario ");
-    System.out.println("1. caring for self/Dependents ");
-    System.out.println("2. Higher Education ");
-    int scenario = option.nextInt();
-    if (scenario == 1) {
-      System.out.println("Maximum leave duration 3 to 6 month");
-    } else if (scenario == 2) {
-      System.out.println("3 months to 2 years");
-    }
-  }
-
   /**
    * main method  is the basic entry point for the application.
    * @param ar the list of arguments
@@ -218,3 +200,4 @@ public class CliMain {
     mainObj.mainMenu();
   }
 }
+
