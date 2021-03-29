@@ -74,7 +74,11 @@ public class Employee {
     this.mgrId = argMgrId;
   }
 
-  /**
+
+public Employee(int i) {
+}
+
+/**
    * @return this Employee's ID.
    */
   public final int getEmpId() {
