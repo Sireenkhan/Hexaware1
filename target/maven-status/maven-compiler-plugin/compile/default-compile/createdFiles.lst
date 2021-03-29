@@ -1,4 +1,5 @@
 com\hexaware\MLP311\model\LeaveDetail.class
+com\hexaware\MLP311\util\LeaveDetailRest.class
 com\hexaware\MLP311\persistence\LeaveDetailMapper.class
 com\hexaware\MLP311\util\EmployeeRest.class
 com\hexaware\MLP311\util\CORSFilter.class

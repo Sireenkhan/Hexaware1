@@ -43,8 +43,8 @@ public class LeaveDetailTest {
         assertEquals(null, LeaveDetailFactory.getLeaveApplicationDetail(1009));
   }
 
-    @Test
-    public void addLeaveApplicationDetailTest(){
+    //@Test
+    /*public void addLeaveApplicationDetailTest(){
         final LeaveDetail li = new LeaveDetail(201, 1002, 3, Date.valueOf("2021-03-16"), Date.valueOf("2021-03-18"),
         "Earned","Marraige", Date.valueOf("2021-03-15"),"Pending","");
 
@@ -52,7 +52,8 @@ public class LeaveDetailTest {
             "Earned","Marraige",Date.valueOf("2021-03-15"),"Pending","");
             assertEquals(li, LeaveDetailFactory.getLeaveApplicationDetail(1002));
 
-        }
+        }*/
+
         @Test
         public void updateLeaveStatusTest(){
             final LeaveDetail d1 = new LeaveDetail(200, 1001, 3, Date.valueOf("2021-03-19"), Date.valueOf("2021-03-20"),
